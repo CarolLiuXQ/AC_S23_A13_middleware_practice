@@ -6,15 +6,11 @@ const exphbs = require('express-handlebars')
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
 
-const fsLibrary = require('fs')
+//導入計算時間的函式
+const duration = require('./tools/duration')
 
-app.use(function (req, res, next) {
-  const dateTw = new Date()
-  const log = `${dateTw.toLocaleString('zh-TW', { hour12: false })} | ${req.method} from ${req.originalUrl}\r\n`
-  fsLibrary.appendFile('./logs/logs.txt', log, (error) => {
-    if (error) throw err;
-  })
-  next()
+app.use((req, res, next) => {
+  duration(req, res, next)
 })
 
 

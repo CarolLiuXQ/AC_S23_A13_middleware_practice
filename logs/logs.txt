@@ -1,5 +1,7 @@
-2021/7/24 17:45:57 | GET from /
-2021/7/24 17:46:03 | GET from /new?
-2021/7/24 17:46:06 | POST from /
-2021/7/24 17:46:11 | GET from /
-2021/7/24 17:46:13 | GET from /123456?
+2021/7/24 21:17:37 | GET from / | total time: 287ms
+2021/7/24 21:18:30 | GET from /new? | total time: 100ms
+2021/7/24 21:18:34 | POST from / | total time: 7ms
+2021/7/24 21:18:38 | GET from / | total time: 22ms
+2021/7/24 21:18:39 | GET from /123456? | total time: 5ms
+2021/7/24 21:18:41 | GET from /123456? | total time: 5ms
+2021/7/24 21:18:44 | GET from / | total time: 12ms
