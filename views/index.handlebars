@@ -1,9 +1,10 @@
-<h1>/ 列出全部 Todo</h1>
+<h1>GET / 列出全部 Todo</h1>
 
 <form action="/new" method="get">
-  <button type="submit" class="btn btn-primary">New</button>
+  <button type="submit" class="btn btn-danger">Add</button>
 </form>
 
-<form action="/123456" method="get">
+{{!-- 預設把id設成123456當作測試 --}}
+<form action="/123456" method="get" class="mt-2">
   <button type="submit" class="btn btn-primary">ID</button>
 </form>
